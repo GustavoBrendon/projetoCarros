@@ -40,15 +40,15 @@ let listaCarro = [
 listaCarro.map((carro, posicao) => {
   let cardCarro = document.getElementById("cards");
   cardCarro.innerHTML += ` 
-        <div class="col-md-4">
-          <div class="card m-2 ">
-        <img src="${carro.img}" class="card-img-top" alt="Imagem do Carro" />
-            <div class="card-body">
-              <h5 class="card-title">${carro.nome}</h5>
-              <a href="#" class="btn btn-secondary" onclick="zoomImg('${posicao}')"><i class="bi bi-zoom-in"> </i></a>
-            </div>
+      <div class="col-md-4">
+        <div class="card m-2 ">
+            <img src="${carro.img}" class="card-img-top" alt="Imagem do Carro" />
+          <div class="card-body">
+            <h5 class="card-title">${carro.nome}</h5>
+            <a href="#" class="btn btn-secondary" onclick="zoomImg('${posicao}')"><i class="bi bi-zoom-in"> </i></a>
           </div>
-        </div>`;
+        </div>
+      </div>`;
 });
 
 function zoomImg(posicao) {
